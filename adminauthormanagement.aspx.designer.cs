@@ -15,66 +15,75 @@ namespace ElibraryManagement
 	{
 
 		/// <summary>
-		/// TextBox1 control.
+		/// TextBox_AuthorId control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox1;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_AuthorId;
 
 		/// <summary>
-		/// Button1 control.
+		/// Button_Go control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Button Button1;
+		protected global::System.Web.UI.WebControls.Button Button_Go;
 
 		/// <summary>
-		/// TextBox2 control.
+		/// TextBox_AuthorName control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox2;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_AuthorName;
 
 		/// <summary>
-		/// Button2 control.
+		/// Button_Add control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Button Button2;
+		protected global::System.Web.UI.WebControls.Button Button_Add;
 
 		/// <summary>
-		/// Button3 control.
+		/// Button_Update control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Button Button3;
+		protected global::System.Web.UI.WebControls.Button Button_Update;
 
 		/// <summary>
-		/// Button4 control.
+		/// Button_Delete control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Button Button4;
+		protected global::System.Web.UI.WebControls.Button Button_Delete;
 
 		/// <summary>
-		/// GridView1 control.
+		/// SqlDataSource1 control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.GridView GridView1;
+		protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+
+		/// <summary>
+		/// AuthorTable control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.GridView AuthorTable;
 	}
 }

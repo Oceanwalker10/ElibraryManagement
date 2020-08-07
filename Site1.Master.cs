@@ -6,7 +6,51 @@ namespace ElibraryManagement
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			
+			try {
+				if(Session["role"].Equals("")) {
+					LinkButton2.Visible = true; // user login link button
+					LinkButton3.Visible = true; // sign up link button
+
+					LinkButton4.Visible = false; // logout link button
+					LinkButton5.Visible = false; // hellor user link button
+
+					LinkButton6.Visible = true; // admin login link button
+					LinkButton7.Visible = false; // author management link button
+					LinkButton8.Visible = false; // publisher management link button
+					LinkButton9.Visible = false; // book inventory link button
+					LinkButton10.Visible = false; // book issuing link button
+					LinkButton11.Visible = false; // member management link button
+				} else if(Session["role"].Equals("user")) {
+					LinkButton2.Visible = false; // user login link button
+					LinkButton3.Visible = false; // sign up link button
+
+					LinkButton4.Visible = true; // logout link bbutton
+					LinkButton5.Visible = true; // hellor user link button
+					LinkButton5.Text = "Hello " + Session["username"].ToString();
+
+					LinkButton6.Visible = true; // admin login link button
+					LinkButton7.Visible = false; // author management link button
+					LinkButton8.Visible = false; // publisher management link button
+					LinkButton9.Visible = false; // book inventory link button
+					LinkButton10.Visible = false; // book issuing link button
+				} else if(Session["role"].Equals("admin")) {
+					LinkButton2.Visible = false; // user login link button
+					LinkButton3.Visible = false; // sign up link button
+
+					LinkButton4.Visible = true; // logout link button
+					LinkButton5.Visible = true; // hellor user link button
+					LinkButton5.Text = "Hello Admin";
+
+					LinkButton6.Visible = false; // admin login link button
+					LinkButton7.Visible = true; // author management link button
+					LinkButton8.Visible = true; // publisher management link button
+					LinkButton9.Visible = true; // book inventory link button
+					LinkButton10.Visible = true; // book issuing link button
+					LinkButton11.Visible = true; // member management link button
+				}
+			} catch (Exception ex) {
+
+			}
 		}
 
 		protected void LinkButton1_Click(object sender, EventArgs e)
@@ -26,6 +70,30 @@ namespace ElibraryManagement
 
 		//logout button
 		protected void LinkButton4_Click(object sender, EventArgs e)
+		{
+			Session["username"] = "";
+			Session["fullname"] = "";
+			Session["role"] = "";
+			Session["status"] = "";
+
+			LinkButton2.Visible = true; // user login link button
+			LinkButton3.Visible = true; // sign up link button
+
+			LinkButton3.Visible = false; // logout link button
+			LinkButton5.Visible = false; // hellor user link button
+
+			LinkButton6.Visible = true; // admin login link button
+			LinkButton7.Visible = false; // author management link button
+			LinkButton8.Visible = false; // publisher management link button
+			LinkButton9.Visible = false; // book inventory link button
+			LinkButton10.Visible = false; // book issuing link button
+			LinkButton11.Visible = false; // member management link button
+
+			Response.Redirect("homepage.aspx");
+		}
+
+		//view profile
+		protected void LinkButton5_Click(object sender, EventArgs e)
 		{
 
 		}
@@ -60,6 +128,5 @@ namespace ElibraryManagement
 			Response.Redirect("adminmembermanagement.aspx");
 		}
 
-		//view profile
 	}
 }
