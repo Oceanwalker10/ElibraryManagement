@@ -51,26 +51,33 @@ namespace ElibraryManagement
 			}
 		}
 
-		bool CheckIfAuthorExists() {
-			try {
+		void GetAuthorById()
+		{
+			try
+			{
 				SqlConnection con = new SqlConnection(strcon);
-				if(con.State == ConnectionState.Closed) {
+				if (con.State == ConnectionState.Closed)
+				{
 					con.Open();
 				}
 
-				SqlCommand cmd = new SqlCommand("SELECT * from dbo.author_master_tbl where author_id='" + TextBox_AuthorId.Text.Trim() + "';", con);
+				SqlCommand cmd = new SqlCommand("Select * from dbo.author_master_tbl where author_id='" + TextBox_AuthorId.Text.Trim() + "';", con);
 				SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
 				DataTable dataTable = new DataTable();
 				dataAdapter.Fill(dataTable);
 
-				if(dataTable.Rows.Count >= 1) {
-					return true;
-				} else {
-					return false;
+				if (dataTable.Rows.Count >= 1)
+				{
+					TextBox_AuthorName.Text = dataTable.Rows[0][1].ToString();
 				}
-			} catch(Exception ex) {
+				else
+				{
+					Response.Write("<script>alert('Invalid Author ID');</script>");
+				}
+			}
+			catch (Exception ex)
+			{
 				Response.Write("<script>alert('" + ex.Message + "');</script>");
-				return false;
 			}
 		}
 
@@ -110,7 +117,6 @@ namespace ElibraryManagement
 				cmd.ExecuteNonQuery();
 				con.Close();
 				Response.Write("<script>alert('Author Updated Successfully');</script>");
-				ClearForm();
 				AuthorTable.DataBind();
 			} catch(Exception ex) {
 				Response.Write("<script>alert('" + ex.Message + "');</script>");
@@ -136,25 +142,34 @@ namespace ElibraryManagement
 			}
 		}
 
-		void GetAuthorById() {
-			try {
+		bool CheckIfAuthorExists()
+		{
+			try
+			{
 				SqlConnection con = new SqlConnection(strcon);
-				if(con.State == ConnectionState.Closed) {
+				if (con.State == ConnectionState.Closed)
+				{
 					con.Open();
 				}
 
-				SqlCommand cmd = new SqlCommand("Select * from dbo.author_master_tbl where author_id='" + TextBox_AuthorId.Text.Trim() + "';", con);
+				SqlCommand cmd = new SqlCommand("SELECT * from dbo.author_master_tbl where author_id='" + TextBox_AuthorId.Text.Trim() + "';", con);
 				SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
 				DataTable dataTable = new DataTable();
 				dataAdapter.Fill(dataTable);
 
-				if(dataTable.Rows.Count >= 1) {
-					TextBox_AuthorName.Text = dataTable.Rows[0][1].ToString();
-				} else {
-					Response.Write("<script>alert('Invalid Author ID');</script>");
+				if (dataTable.Rows.Count >= 1)
+				{
+					return true;
 				}
-			} catch(Exception ex) {
+				else
+				{
+					return false;
+				}
+			}
+			catch (Exception ex)
+			{
 				Response.Write("<script>alert('" + ex.Message + "');</script>");
+				return false;
 			}
 		}
 
