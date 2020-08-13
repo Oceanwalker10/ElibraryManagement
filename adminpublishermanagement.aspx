@@ -88,15 +88,15 @@
 						</div>
 
 						<div class="row">
-							<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=DESKTOP-T60FASN\SQLEXPRESS;
+							<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=Labo\SQLEXPRESS;
 							Initial Catalog=elibraryDB;Integrated Security=True" ProviderName="System.Data.SqlClient" 
 							SelectCommand="SELECT * FROM [publisher_master_tbl]"></asp:SqlDataSource>
 							<div class="col">
 								<asp:GridView class="table table-striped table-bordered" ID="PublisherTable" runat="server"
 								AutoGenerateColumns="False" DataKeyNames="publisher_id" DataSourceID="SqlDataSource1">
 									<Columns>
-										<asp:BoundField DataField="publisher_id" HeaderText="publisher_id" ReadOnly="true" SortExpression="publisher_id" />
-										<asp:BoundField DataField="publisher_name" HeaderText="publisher_name" SortExpression="publisher_name" />
+										<asp:BoundField DataField="publisher_id" HeaderText="Publisher Id" ReadOnly="true" SortExpression="publisher_id" />
+										<asp:BoundField DataField="publisher_name" HeaderText="Publisher Name" SortExpression="publisher_name" />
 									</Columns>
 								</asp:GridView>
 

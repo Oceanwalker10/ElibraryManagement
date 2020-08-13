@@ -15,147 +15,156 @@ namespace ElibraryManagement
 	{
 
 		/// <summary>
-		/// TextBox1 control.
+		/// TextBox_MemberId control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox1;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_MemberId;
 
 		/// <summary>
-		/// LinkButton1 control.
+		/// LinkButton_Go control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+		protected global::System.Web.UI.WebControls.LinkButton LinkButton_Go;
 
 		/// <summary>
-		/// TextBox2 control.
+		/// TextBox_FullName control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox2;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_FullName;
 
 		/// <summary>
-		/// TextBox3 control.
+		/// TextBox_AccountStatus control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox3;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_AccountStatus;
 
 		/// <summary>
-		/// LinkButton2 control.
+		/// LinkButton_Active control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
+		protected global::System.Web.UI.WebControls.LinkButton LinkButton_Active;
 
 		/// <summary>
-		/// LinkButton3 control.
+		/// LinkButton_Pending control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+		protected global::System.Web.UI.WebControls.LinkButton LinkButton_Pending;
 
 		/// <summary>
-		/// LinkButton4 control.
+		/// LinkButton4_Deactive control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+		protected global::System.Web.UI.WebControls.LinkButton LinkButton4_Deactive;
 
 		/// <summary>
-		/// TextBox4 control.
+		/// TextBox_DOB control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox4;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_DOB;
 
 		/// <summary>
-		/// TextBox5 control.
+		/// TextBox_ContactNo control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox5;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_ContactNo;
 
 		/// <summary>
-		/// TextBox6 control.
+		/// TextBox_EmailID control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox6;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_EmailID;
 
 		/// <summary>
-		/// TextBox7 control.
+		/// TextBox_State control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox7;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_State;
 
 		/// <summary>
-		/// TextBox8 control.
+		/// TextBox_City control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox8;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_City;
 
 		/// <summary>
-		/// TextBox9 control.
+		/// TextBox_ZipCode control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox9;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_ZipCode;
 
 		/// <summary>
-		/// TextBox10 control.
+		/// TextBox_Address control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.TextBox TextBox10;
+		protected global::System.Web.UI.WebControls.TextBox TextBox_Address;
 
 		/// <summary>
-		/// Button2 control.
+		/// Button_DeleteUser control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Button Button2;
+		protected global::System.Web.UI.WebControls.Button Button_DeleteUser;
 
 		/// <summary>
-		/// GridView1 control.
+		/// SqlDataSource1 control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.GridView GridView1;
+		protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+
+		/// <summary>
+		/// MemberTable control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.GridView MemberTable;
 	}
 }

@@ -88,7 +88,7 @@
 						</div>
 
 						<div class="row">
-							<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=DESKTOP-T60FASN\SQLEXPRESS;
+							<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=Labo\SQLEXPRESS;
 							Initial Catalog=elibraryDB;Integrated Security=True" ProviderName="System.Data.SqlClient" 
 							SelectCommand="SELECT * FROM [author_master_tbl]"></asp:SqlDataSource>
 							
@@ -96,8 +96,8 @@
 								<asp:GridView class="table table-striped table-bordered" ID="AuthorTable" runat="server" 
 								AutoGenerateColumns="False" DataKeyNames="author_id" DataSourceID="SqlDataSource1">
 									<Columns>
-										<asp:BoundField DataField="author_id" HeaderText="author_id" ReadOnly="true" SortExpression="author_id" />
-										<asp:BoundField DataField="author_name" HeaderText="author_name" SortExpression="author_name" />
+										<asp:BoundField DataField="author_id" HeaderText="Author Id" ReadOnly="true" SortExpression="author_id" />
+										<asp:BoundField DataField="author_name" HeaderText="Author Name" SortExpression="author_name" />
 									</Columns>
 								</asp:GridView>
 							</div>
