@@ -75,11 +75,12 @@ namespace ElibraryManagement
 					TextBox_ActualStock.Text = dataTable.Rows[0]["actual_stock"].ToString().Trim();
 					TextBox_CurrentStock.Text = dataTable.Rows[0]["current_stock"].ToString().Trim();
 					TextBox_BookDescription.Text = dataTable.Rows[0]["book_description"].ToString();
-					TextBox_CurrentStock.Text = "" + (Convert.ToInt32(dataTable.Rows[0]["actual_stock"].ToString()) - Convert.ToInt32(dataTable.Rows[0]["current_stock"].ToString()));
+					/*TextBox_CurrentStock.Text = "" + (Convert.ToInt32(dataTable.Rows[0]["actual_stock"].ToString()) - Convert.ToInt32(dataTable.Rows[0]["current_stock"].ToString()));*/
 
 					DropDownList_Language.SelectedValue = dataTable.Rows[0]["language"].ToString().Trim();
 					DropDownList_Publisher.SelectedValue = dataTable.Rows[0]["publisher_name"].ToString().Trim();
 					DropDownList_AuthorName.SelectedValue = dataTable.Rows[0]["author_name"].ToString().Trim();
+					
 
 					ListBox_Genre.ClearSelection();
 					string[] genre = dataTable.Rows[0]["genre"].ToString().Trim().Split(',');

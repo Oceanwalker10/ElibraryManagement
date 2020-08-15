@@ -1735,6 +1735,7 @@
     <Content Include="adminpublishermanagement.aspx" />
     <Content Include="adminbookissuing.aspx" />
     <Content Include="adminbookinventory.aspx" />
+    <Content Include="viewbooks.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="adminmembermanagement.aspx.cs">
@@ -1807,6 +1808,13 @@
     </Compile>
     <Compile Include="adminbookinventory.aspx.designer.cs">
       <DependentUpon>adminbookinventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewbooks.aspx.cs">
+      <DependentUpon>viewbooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewbooks.aspx.designer.cs">
+      <DependentUpon>viewbooks.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
